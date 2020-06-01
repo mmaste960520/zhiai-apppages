@@ -1,0 +1,44 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+      display: table;
+      clear: both;
+  }
+}
+
+// 主题系统
+// scp_famaleTheme 女版  scp_maleTheme男版
+$skins: scp_famaleTheme, scp_maleTheme;
+
+@mixin x-color($colors...) {
+  color: nth($colors, 1);
+  @each $color in $colors {
+    $i: index($colors, $color);
+    $skin: nth($skins, $i);
+    [data-skin="#{$skin}"] & {
+      color: $color;
+    }
+  }
+}
+
+@mixin x-bg-color($colors...) {
+  background-color: nth($colors, 1);
+  @each $color in $colors {
+    $i: index($colors, $color);
+    $skin: nth($skins, $i);
+    [data-skin="#{$skin}"] & {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin x-bg($bgs...) {
+  background: nth($bgs, 1);
+  @each $bg in $bgs {
+    $i: index($bgs, $bg);
+    $skin: nth($skins, $i);
+    [data-skin="#{$skin}"] & {
+      background: $bg;
+    }
+  }
+}

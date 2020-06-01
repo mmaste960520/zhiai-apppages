@@ -1,0 +1,27 @@
+// Common styles
+
+//对于当前页面底色渐变
+.x-background{
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(42,50,66,1) 0%, rgba(209,209,209,1) 35%, rgba(209,209,209,1) 81%);
+    z-index: -1;
+  }
+}
+.marrgin-top-10{
+  margin-top: 10px;
+}
+.marrgin-bottom-10{
+  margin-bottom: 10px;
+}
+.marrgin-right-10{
+  margin-right: 10px;
+}
+.marrgin-left-10{
+  margin-left: 10px;
+}
