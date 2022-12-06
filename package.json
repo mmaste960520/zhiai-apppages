@@ -14,7 +14,7 @@
     "lib-flexible": "^0.3.2",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "qs": "^6.9.0",
+    "qs": "^6.9.7",
     "showdown": "^1.9.0",
     "vue": "^2.6.10",
     "vue-awesome-swiper": "^3.1.3",
